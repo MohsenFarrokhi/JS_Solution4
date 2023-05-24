@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8FAFB;
+    flex-direction: row;
+}
+
+.card {
+    width: 1400px;
+    height: 560px;
+    /*background-color: red;*/
+    display: flex;
+}
+
+.image_container {
+    display: flex;
+    /*background-color: blue;*/
+    width: 60%;
+    height: 100%;
+}
+
+.image {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+}
+
+.form_sign_in {
+    background-color: #F8FAFB;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.title {
+    color: #212529;
+    font-size: 28px;
+    /*padding: 0 15px;*/
+    display: flex;
+    width: 55%;
+}
+
+.description {
+    color: #73777B;
+    font-size: 16px;
+    /*padding: 0 15px;*/
+    margin-top: 10px;
+    font-weight: lighter;
+    width: 55%;
+    line-height: 24px;
+}
+
+.input_container {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: 8px 0;
+    /*padding: 0 15px;*/
+}
+
+.icon_container {
+    display: flex;
+}
+
+.label {
+    font-size: 12px;
+    color: #B3B3B3;
+    cursor: pointer;
+}
+
+.input {
+    border: none;
+    background-color: #EDF2F5;
+    padding: 24px 24px;
+    margin: 4px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sub_border {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /*padding: 0 12px;*/
+    width: 55%;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.label_remember {
+    font-size: 12px;
+    color: #888888;
+    margin-left: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.rememberdiv {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.output_remember {
+    color: #6C63FF;
+    font-size: 12px;
+    align-items: center;
+    /*padding: 0 15px;*/
+}
+
+.control_indicator {
+    height: 16px;
+    width: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.forgot_pass {
+    background-color: #F8FAFB;
+    font-size: 12px;
+    color: #888888;
+    cursor: pointer;
+}
+
+.login_border {
+    width: 55%;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #6C63FF;
+    text-align: center;
+    border-radius: 4px 4px;
+    margin: 15px 0;
+    padding: 12px;
+    font-weight: normal;
+}
+
+.sub_login {
+    color: #6C757D;
+    font-size: 15px;
+    /*padding: 0 15px;*/
+}
+
+.icon_other_connections {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+.facebook {
+    cursor: pointer;
+}
+
+.twitter {
+    cursor: pointer;
+}
+
+.google {
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .form_sign_in {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .title {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .description {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .input_container {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .sub_border {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .label_remember {
+        display: flex;
+        /*width: 100%;*/
+        margin-left: 8px;
+    }
+
+    .forgot_pass {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .input_container {
+        display: flex;
+        width: 100%;
+    }
+
+    .login_border {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .sub_login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon_other_connections {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
