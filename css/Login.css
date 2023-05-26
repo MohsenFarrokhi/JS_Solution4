@@ -110,7 +110,7 @@
     cursor: pointer;
 }
 
-.rememberdiv {
+.remember {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -139,6 +139,7 @@
 }
 
 .login_border {
+    border: none;
     width: 55%;
     font-size: 14px;
     color: #ffffff;
@@ -151,6 +152,9 @@
     cursor: pointer;
 }
 
+.login_border:hover {
+    background: #4942E4;
+}
 .sub_login {
     color: #6C757D;
     font-size: 15px;
@@ -168,14 +172,22 @@
     cursor: pointer;
 }
 
+.facebook:hover {
+    opacity: 0.7;
+}
+
 .twitter {
     cursor: pointer;
 }
-
+.twitter:hover {
+    opacity: 0.7;
+}
 .google {
     cursor: pointer;
 }
-
+.google:hover {
+    opacity: 0.7;
+}
 @media (max-width: 1024px) {
     .card {
         display: flex;
