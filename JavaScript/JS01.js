@@ -15,3 +15,21 @@ function addTodo() {
         todoInput.value = "";
     }
 }
+
+// create a todo item
+function createTodoItem(todoText) {
+    const todoItem = document.createElement("li");
+    todoItem.innerHTML = `
+    <input type="checkbox">
+    <label>${todoText}</label>
+    <button class="edit-btn">Edit</button>
+    <button class="delete-btn">Delete</button>
+  `;
+
+    todoItem.querySelector(".edit-btn").addEventListener("click", editTodo);
+    todoItem.querySelector(".delete-btn").addEventListener("click", deleteTodo);
+    todoItem.querySelector("input[type='checkbox']").addEventListener("change", toggleComplete);
+
+    return todoItem;
+}
+
