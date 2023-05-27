@@ -66,3 +66,18 @@ function saveTodo() {
     this.addEventListener("click", editTodo);
 }
 
+// delete a todo item
+function deleteTodo() {
+    const todoItem = this.parentNode;
+    todoItem.parentNode.removeChild(todoItem);
+}
+
+// toggle the completion status
+function toggleComplete() {
+    const todoItem = this.parentNode;
+    if (this.checked) {
+        completedList.appendChild(todoItem);
+    } else {
+        todoList.appendChild(todoItem);
+    }
+}
