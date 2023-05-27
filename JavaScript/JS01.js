@@ -5,3 +5,13 @@ const completedList = document.getElementById("completed-list");
 
 addBtn.addEventListener("click", addTodo);
 
+// add a new todo item
+function addTodo() {
+    const todoText = todoInput.value.trim();
+
+    if (todoText !== "") {
+        const todoItem = createTodoItem(todoText);
+        todoList.appendChild(todoItem);
+        todoInput.value = "";
+    }
+}
