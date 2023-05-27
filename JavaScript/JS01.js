@@ -33,3 +33,22 @@ function createTodoItem(todoText) {
     return todoItem;
 }
 
+//  edit a todo item
+function editTodo() {
+    const todoItem = this.parentNode;
+    const todoLabel = todoItem.querySelector("label");
+
+    // Create an input field and set its value as the current task text
+    const editInput = document.createElement("input");
+    editInput.type = "text";
+    editInput.value = todoLabel.textContent;
+    todoItem.replaceChild(editInput, todoLabel);
+
+    // Change the Edit button to Save button
+    this.textContent = "Save";
+    this.removeEventListener("click", editTodo);
+    this.addEventListener("click", saveTodo);
+
+    // Focus on the input field
+    editInput.focus();
+}
