@@ -52,3 +52,17 @@ function editTodo() {
     // Focus on the input field
     editInput.focus();
 }
+
+// save the edited todo item
+function saveTodo() {
+    const todoItem = this.parentNode;
+    const editInput = todoItem.querySelector("input[type='text']");
+    const todoLabel = document.createElement("label");
+    todoLabel.textContent = editInput.value;
+    todoItem.replaceChild(todoLabel, editInput);
+
+    this.textContent = "Edit";
+    this.removeEventListener("click", saveTodo);
+    this.addEventListener("click", editTodo);
+}
+
